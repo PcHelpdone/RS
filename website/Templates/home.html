@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+    %}
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Hi {%print(user.first_name)%}</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Premium Memberships</h2>
+          <p>Premium Memberships give you discount and cash back for more information press the button below. </p>
+          <p><a class="btn btn-primary" href="/pricing" role="button">Premium Memberships &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>tokens</h2>
+          <p>The currency of this website is tokens.To buy anything you will need tokens for more information click the button below.</p>
+          <p><a class="btn btn-primary" href="#" role="button">Buy Tokens &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Robux</h2>
+          <p>You cna buy robux in this website for with the help of Tokens and more cheaper with the help on Premium Memberships.</p>
+          <p><a class="btn btn-primary" href="#" role="button">Robux Shop &raquo;</a></p>
+        </div>
+      </div>
+    {% endblock %}
